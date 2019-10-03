@@ -5,18 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pokedex</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-    <h1>Pokédex</h1>
-    <input type="text" placeholder="Search for Pokémon here" />
     <img
-      src="https://static.pokemonpets.com/images/monsters-images-800-800/1-Bulbasaur.png"
+      id="title"
+      src="https://static1.textcraft.net/data1/c/8/c8807f86d9e9d5b5530e503f650816f9e6c8b847da39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd80709e997837b44e4cf02f63ab47b56cf530e.png"
     />
-    <h3>Name and ID here</h3>
-    <p>Description here</p>
-    <button>This is a button</button>
+    <div class="searchAndImageContainer">
+      <div>
+        <input type="text" placeholder="Search for Pokémon here" />
+        <button id="searchButton">search</button>
+      </div>
+      <img
+        id="pokemonPic"
+        src="https://static.pokemonpets.com/images/monsters-images-800-800/1-Bulbasaur.png"
+      />
+    </div>
 
+    <div class="nameIDDescriptionContainer">
+      <h3>Name and ID here</h3>
+      <p id="description">
+        Bulbasaur can be seen napping in bright sunlight. There is a seed on its
+        back. By soaking up the sun's rays, the seed grows progressively larger.
+        Bulbasaur can be seen napping in bright sunlight. There is a seed on its
+        back. By soaking up the sun's rays, the seed grows progressively larger.
+      </p>
+    </div>
+    <button>This is a button</button>
     <script src="index.js"></script>
   </body>
 </html>
