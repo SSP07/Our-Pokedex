@@ -22,8 +22,9 @@ app.get("/pokemon", async function (req, res, next) {
   if (!pokemon) {
     res.send({
       success: false,
-      message: "There is no Pokémon of that name!"
+      payload: "No Pokémon found!"
     })
+    return;
   }
   res.send({
     success: true,
